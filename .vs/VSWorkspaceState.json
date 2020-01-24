@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CoffeeShop",
+    "\\CoffeeShop\\Controllers",
+    "\\CoffeeShop\\Views",
+    "\\CoffeeShop\\Views\\Home",
+    "\\CoffeeShop\\Views\\Shared"
+  ],
+  "SelectedNode": "\\CoffeeShop\\Views\\Home\\Registration.cshtml",
+  "PreviewInSolutionExplorer": false
+}

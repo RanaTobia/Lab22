@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<h1>Registration</h1>
+
+<form asp-controller="Home" asp-action="Summary">
+    <div class="form-group">
+        <label>User Name</label>
+        <input type="text" class="form-control" name="username" pattern="[A-Za-z]+" required />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" name="email" />
+    </div>
+    <div class="form-group">
+        <label>DateOfBirth</label>
+        <input type="date" class="form-control" name="DateOfBirth" required />
+    </div>
+    <div class="form-group">
+        <label>PhoneNumber</label>
+        <input type="text" class="form-control" name="PhoneNumber" pattern="\d{3}-\d{3}-\d{4}$" />
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" name="password" />
+    </div>
+    <div class="form-group">
+        <label>Password Confirmation</label>
+        <input type="password" class="form-control" name="Password Confirmation" />
+    </div>
+    
+    <p> What is you gender?</p>
+    <label for="female">Female:</label>
+    <input name="your choice" id="female" type="radio" />
+
+    <label for="male">Male:</label>
+    <input name="your choice" id="male" type="radio" />
+
+    <p>
+        Please Select Your County:
+        <select name="Counrty">
+            <option>usa</option>
+            <option>Italy</option>
+            <option>Canada</option>
+        </select>
+    </p>
+    <p>
+        I accept the term of services: <input type="checkbox" name="Agree" />
+    </p>
+
+    <div class="form-group">
+        <input type="submit" class="form-control btn btn-primary" />
+    </div>
+
+
+</form>
+
